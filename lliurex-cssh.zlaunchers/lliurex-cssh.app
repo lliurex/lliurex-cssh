@@ -8,5 +8,5 @@ Icon=lliurex-cssh
 Groups=teachers;admin;admins;adm
 Category=Network
 ScriptPath=lliurex-cssh.zmd
-Using=pe 
+Using=pkexec
 Service=False
