@@ -1,3 +1,9 @@
+lliurex-cssh (0.35) bionic; urgency=medium
+
+  * Initial release for bionic
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 04 Oct 2018 13:29:46 +0200
+
 lliurex-cssh (0.25) xenial; urgency=medium
 
   * Fix po files
