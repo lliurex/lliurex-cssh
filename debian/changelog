@@ -1,0 +1,140 @@
+lliurex-cssh (0.25) xenial; urgency=medium
+
+  * Fix po files
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 15 Jun 2017 09:22:01 +0200
+
+lliurex-cssh (0.24) xenial; urgency=medium
+
+  * Copy code to xenial
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 09 Feb 2016 11:56:11 +0100
+
+lliurex-cssh (0.21) trusty; urgency=medium
+
+  * Configured for trusty
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 29 Sep 2014 16:30:16 +0200
+
+lliurex-cssh (0.20) precise; urgency=low
+
+  * UNRELEASED
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 08 May 2014 13:56:38 +0200
+
+lliurex-cssh (0.19) precise; urgency=high
+
+  * Fixing app file
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 08 May 2014 11:30:34 +0200
+
+lliurex-cssh (0.18) precise; urgency=high
+
+  * Adding zero-center banner
+
+ -- Hector Garcia Huerta <cless@anubis.lliurex.fs>  Mon, 17 Jun 2013 09:23:51 +0200
+
+lliurex-cssh (0.17) precise; urgency=low
+
+  * Added adm group to app file
+
+ -- cless <cless@jehuty>  Sat, 15 Jun 2013 18:14:48 +0200
+
+lliurex-cssh (0.16) precise; urgency=low
+
+  * Fixed n4d features 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Fri, 14 Jun 2013 14:49:12 +0200
+
+lliurex-cssh (0.15) precise; urgency=low
+
+  * Changed to work with n4d
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Mon, 28 Jan 2013 12:05:21 +0100
+
+lliurex-cssh (0.14) precise; urgency=low
+
+  * upgraded from Leia
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Fri, 18 Jan 2013 13:04:19 +0100
+
+lliurex-cssh (0.13) lucid; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Mon, 20 Feb 2012 12:41:21 +0100
+
+lliurex-cssh (0.12) lucid; urgency=low
+
+  * Uploaders Fixed
+  * ToNemo
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Mon, 20 Feb 2012 12:40:37 +0100
+
+lliurex-cssh (0.11) lucid; urgency=low
+
+  * Changed referenced variables to discover network and bitmask 
+
+ -- Jose Carlos Garcia <garcia_josmon@gva.es>  Mon, 14 Nov 2011 11:49:05 +0100
+
+lliurex-cssh (0.10) unstable; urgency=low
+
+  * Fixed transaltion
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Mon, 28 Mar 2011 11:28:30 +0200
+
+lliurex-cssh (0.9) unstable; urgency=low
+
+  * Added es translation for lliurex-cssh
+  * Fixed english translation
+  * Added qcv translation for lliurex-cssh
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Mon, 28 Mar 2011 09:08:11 +0200
+
+lliurex-cssh (0.8) unstable; urgency=low
+
+  * Fixed version
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Thu, 21 Oct 2010 11:37:13 +0200
+
+lliurex-cssh (0.7) unstable; urgency=low
+
+  * Fixed version
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Thu, 21 Oct 2010 11:31:38 +0200
+
+lliurex-cssh (0.5) unstable; urgency=low
+
+  * Now integrated with zero-center
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Thu, 07 Oct 2010 11:48:32 +0200
+
+lliurex-cssh (0.4) unstable; urgency=low
+
+  * Added desktop for clients admin
+  * Fixed errors on servers admin
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Wed, 06 Oct 2010 13:56:33 +0200
+
+lliurex-cssh (0.3) unstable; urgency=low
+
+  * Added a server admin mode
+  * Corrected a mistake in the script 
+  * Added lan request 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Tue, 05 Oct 2010 10:16:31 +0200
+
+lliurex-cssh (0.2) unstable; urgency=low
+
+  * Changed the name of script
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Tue, 05 Oct 2010 09:14:35 +0200
+
+lliurex-cssh (0.1) unstable; urgency=low
+
+  * Changed options 
+  * Added script to detect clients 
+  * Added install/usr/sbin 
+  * Modified depends 
+
+ -- David Montalva Furio <montalva_dav@gva.es>  Mon, 04 Oct 2010 12:00:58 +0200
