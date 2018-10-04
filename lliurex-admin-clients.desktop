@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Lliurex-cssh
+Name[es]=Gestión remota de clientes.
+Name[qcv]=Gestió remota de clients.
+Comment=Administració remota de clients
+Comment[es]=Administración remota de clientes
+Comment[qcv]=Administració remota de clients
+Exec=gksu lliurex-admin-clients
+Terminal=false
+Icon=applications-system
+Type=Application
+GenericName=Lliurex-cssh
+Categories=LliureX-Administration;

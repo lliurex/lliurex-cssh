@@ -1,0 +1,5 @@
+#!/bin/bash
+
+exec lliurex-admin-clients
+
+exit 0

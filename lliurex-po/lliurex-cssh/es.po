@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-28 09:05+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: install/usr/sbin/lliurex-admin-clients:8
+msgid "User's login to connect the clients"
+msgstr "Nombre de usuario para conectarse a los clientes"
+
+#: install/usr/sbin/lliurex-admin-clients:9
+msgid "User:"
+msgstr "Usuario:"
+
+#: install/usr/sbin/lliurex-admin-clients:10
+msgid "Login field empty"
+msgstr "Campo de usuario vacio"
+
+#: install/usr/sbin/lliurex-admin-clients:11
+msgid "Checking online clients"
+msgstr "Comprobando clientes conectados"
+
+#: install/usr/sbin/lliurex-admin-clients:12
+msgid "Wait please..."
+msgstr "Por favor, espere..."
+
+#: install/usr/sbin/lliurex-admin-clients:13
+msgid "No clients online"
+msgstr "No hay clientes conectados"
+
+#: install/usr/sbin/lliurex-admin-clients:14
+msgid "We have "
+msgstr "Tenemos "
+
+#: install/usr/sbin/lliurex-admin-clients:15
+msgid " computers online "
+msgstr " clientes conectados "
+
+#: install/usr/sbin/lliurex-admin-clients:16
+msgid "Do you want to continue?"
+msgstr "¿Quiere continuar?"
