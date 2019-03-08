@@ -1,26 +1,27 @@
 [
     {
-        "cmd": "/usr/bin/lliurex-admin-clients",
-        "prefix": "net.lliurex.lliurex-cssh",
-        "nameaction": "lliurex-cssh",
+        "prefix": "net.lliurex.zero-center.lliurex-cssh",
+        "cmd": "/usr/share/zero-center/zmds/lliurex-cssh.zmd",
+        "nameaction": "launcher",
         "icon": "lliurex-cssh",
-        "auths": [
-            {
-                "type": "group",
-                "members": [
-                    "admins",
-                    "adm"
-                ],
-                "any": "no",
-                "inactive": "no",
-                "active": "yes"
-            }
-        ],
         "default_auth": {
             "any": "no",
             "inactive": "no",
             "active": "no"
         },
-        "requiredx": "true"
+        "auths": [
+            {
+                "type": "group",
+                "members": [
+                    "teachers",
+                    "admin",
+                    "admins",
+                    "adm"
+                ],
+                "any": "yes",
+                "inactive": "yes",
+                "active": "yes"
+            }
+        ]
     }
 ]
