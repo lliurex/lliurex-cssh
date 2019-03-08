@@ -1,0 +1,26 @@
+[
+    {
+        "cmd": "/usr/bin/lliurex-admin-clients",
+        "prefix": "net.lliurex.lliurex-cssh",
+        "nameaction": "lliurex-cssh",
+        "icon": "lliurex-cssh",
+        "auths": [
+            {
+                "type": "group",
+                "members": [
+                    "admins",
+                    "adm"
+                ],
+                "any": "no",
+                "inactive": "no",
+                "active": "yes"
+            }
+        ],
+        "default_auth": {
+            "any": "no",
+            "inactive": "no",
+            "active": "no"
+        },
+        "requiredx": "true"
+    }
+]
