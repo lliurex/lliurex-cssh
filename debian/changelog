@@ -1,3 +1,9 @@
+lliurex-cssh (0.37) bionic; urgency=medium
+
+  * Adding sudo group
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 29 Mar 2019 13:53:31 +0100
+
 lliurex-cssh (0.36) bionic; urgency=medium
 
   * Replaced gksu with pkexec
