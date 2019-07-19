@@ -11,5 +11,6 @@ Exec=pkexec lliurex-admin-clients
 Terminal=false
 Icon=applications-system
 Type=Application
+NoDisplay=true
 GenericName=Lliurex-cssh
 Categories=LliureX-Administration;
