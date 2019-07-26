@@ -1,3 +1,9 @@
+lliurex-cssh (0.39) bionic; urgency=medium
+
+  * Adding ca@valencia
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 26 Jul 2019 11:20:30 +0200
+
 lliurex-cssh (0.38) bionic; urgency=medium
 
   * Hided desktop
