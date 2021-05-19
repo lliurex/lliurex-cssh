@@ -34,7 +34,7 @@ usuario=$(zenity --width="500" --entry --title="$MSG_LOGIN_USER" --text="$MSG_US
 #Obtain registrered active clients
 if [ true ]; then
 	echo "1"
-	nmap -sS -p$tcos_port -oG $clients_file $INTERNAL_NETWORK"/"$INTERNAL_MASK
+	nmap -sT -p$tcos_port -oG $clients_file $INTERNAL_NETWORK"/"$INTERNAL_MASK
 	cat $clients_file| grep open|cut -d " " -f2>clients.tmp
 	cat clients.tmp | sed -e 's/^/'$usuario'@/g'>$clients_file
 	rm clients.tmp
