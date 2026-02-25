@@ -11,3 +11,10 @@ Architecture: all
 Depends: nmap, clusterssh
 Description: Lliurex Cluster SSH
  Simple wrapper to install the Cluster SSH with lliurex pluggin 
+
+
+Package: lliurex-cssh-natfree
+Architecture: all
+Depends: lliurex-cssh
+Description: Lliurex Cluster SSH for natfree classroom
+ Modified version of the Cluster SSH to work in natfree classroom
