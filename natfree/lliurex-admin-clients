@@ -14,12 +14,22 @@ MSG_NO_CLIENTS_ONLINE=$(gettext "No clients online")
 MSG_CLIENTS_ONLINE_PART1=$(gettext "We have ")
 MSG_CLIENTS_ONLINE_PART2=$(gettext " computers online ")
 MSG_CONTINUE=$(gettext "Do you want to continue?")
+MSG_ERROR_NETWORK_CIDR=$(gettext "Error obtaining network. Please check is you control any cart ")
 #LANG="es_ES.UTF-8"
 tcos_port="22"
 num_clientes=1
 clients_file="clientes"
+
 NETWORK_CIRD=$(nfctl network network_cidr)
+
+if [ -z "$NETWORK_CIRD" ]
+then
+	zenity --error --text="$MSG_ERROR_NETWORK_CIDR"
+	exit 1
+fi
+
 eval $(n4d-vars getvalues SRV_IP)
+
 
 #Ask for a user to connect with
 usuario=$(zenity --width="500" --entry --title="$MSG_LOGIN_USER" --text="$MSG_USER")
