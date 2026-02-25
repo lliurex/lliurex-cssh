@@ -22,7 +22,7 @@ set -e
 case "$1" in
     purge|remove)
 	    # remove the dpkg diversion for /usr/sbin/lliurex-admin-client
-	    dpkg-divert --package lliurex-cssh-natfree --rename --remove /usr/sbin/lliurex-admin-client
+	    dpkg-divert --package lliurex-cssh-natfree --rename --remove /usr/sbin/lliurex-admin-clients
 		;;
     upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
 	    ;;

@@ -17,7 +17,7 @@ set -e
 case "$1" in
     install)
 	    # create a dpkg diversion to /usr/sbin/lliurex-admin-client
-	    dpkg-divert --package lliurex-cssh-natfree --rename --add /usr/sbin/lliurex-admin-client 
+	    dpkg-divert --package lliurex-cssh-natfree --rename --add /usr/sbin/lliurex-admin-clients 
 
     ;;
 
