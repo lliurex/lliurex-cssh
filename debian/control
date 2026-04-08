@@ -1,0 +1,26 @@
+Source: lliurex-cssh
+Section: utils
+Priority: extra
+Maintainer: Equipo LliureX <lliurex@gva.es>
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13),
+	zero-dev,
+	llxsrchelper,
+	python3-poinstaller
+Standards-Version: 4.6.2
+Vcs-Git: https://github.com/lliurex/lliurex-cssh.git
+
+Package: lliurex-cssh
+Architecture: all
+Multi-Arch: foreign
+Depends: nmap, clusterssh
+Description: Lliurex Cluster SSH
+ Simple wrapper to install the Cluster SSH with lliurex pluggin 
+
+
+Package: lliurex-cssh-natfree
+Architecture: all
+Multi-Arch: foreign
+Depends: lliurex-cssh, natfree-common (>= 2.15)
+Description: Lliurex Cluster SSH for natfree classroom
+ Modified version of the Cluster SSH to work in natfree classroom
