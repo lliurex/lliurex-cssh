@@ -14,13 +14,22 @@ MSG_NO_CLIENTS_ONLINE=$(gettext "No clients online")
 MSG_CLIENTS_ONLINE_PART1=$(gettext "We have ")
 MSG_CLIENTS_ONLINE_PART2=$(gettext " computers online ")
 MSG_CONTINUE=$(gettext "Do you want to continue?")
+MSG_ERROR_NETWORK_CIDR=$(gettext "Error obtaining network. Please check is you control any cart ")
 #LANG="es_ES.UTF-8"
 tcos_port="22"
 num_clientes=1
 clients_file="clientes"
-eval $(n4d-vars getvalues INTERNAL_NETWORK)
-eval $(n4d-vars getvalues INTERNAL_MASK)
+
+NETWORK_CIRD=$(nfctl network network_cidr)
+
+if [ -z "$NETWORK_CIRD" ]
+then
+	zenity --error --text="$MSG_ERROR_NETWORK_CIDR"
+	exit 1
+fi
+
 eval $(n4d-vars getvalues SRV_IP)
+
 
 #Ask for a user to connect with
 usuario=$(zenity --width="500" --entry --title="$MSG_LOGIN_USER" --text="$MSG_USER")
@@ -34,13 +43,14 @@ usuario=$(zenity --width="500" --entry --title="$MSG_LOGIN_USER" --text="$MSG_US
 #Obtain registrered active clients
 if [ true ]; then
 	echo "1"
-	nmap -sT -p$tcos_port -oG $clients_file $INTERNAL_NETWORK"/"$INTERNAL_MASK
+	nmap -sS -p$tcos_port -oG $clients_file $NETWORK_CIRD
 	cat $clients_file| grep open|cut -d " " -f2>clients.tmp
+	for x in $(hostname -I); do sed -i "/$x/d" clients.tmp; done
 	cat clients.tmp | sed -e 's/^/'$usuario'@/g'>$clients_file
 	rm clients.tmp
-	echo "2"
+	#echo "2"
 	#remove the server IP
-	cat $clients_file| grep -v $(echo $SRV_IP | cut -d "=" -f2|cut -d "'" -f2)>$clients_file
+	#cat $clients_file| grep -v $(echo $SRV_IP | cut -d "=" -f2|cut -d "'" -f2)>$clients_file
 fi |zenity --progress --pulsate --width="300" --auto-close --title="$MSG_CHECK_MACHINES" --text="$MSG_WAITING" --percentage=0 
 
 #Check if there are any client connected
